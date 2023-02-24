@@ -21,9 +21,14 @@ public class Ejerciciojava {
         opcion = menu();
         switch (opcion) {
             case 1:
-                    radio = pideRadio();
-                    System.out.printf("La circunferencia es de: %.2f",circunferencia(radio));
-                    
+                radio = pideRadio();
+                System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
+                break;
+            case 2:
+                radio = pideRadio();
+                System.out.printf("La area es de: %.2f", area(radio));
+                break;
+
         }
 
     }
@@ -32,7 +37,7 @@ public class Ejerciciojava {
         Scanner respuesta = new Scanner(System.in);
         System.out.println("MENU");
         System.out.println("1. Circunferencia");
-        System.out.println("2. Area\n");
+        System.out.println("2. Area");
         System.out.print("Selecciona una opción: ");
         return respuesta.nextInt();
     }
