@@ -36,7 +36,9 @@ public class Ejerciciojava {
         return respuesta.nextInt();
     }
 
-
+    public static double circunferencia(double r) {
+        return 2 * Math.PI * r;
+    }
 
 
 }
