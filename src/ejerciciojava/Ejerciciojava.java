@@ -18,6 +18,13 @@ public class Ejerciciojava {
     public static void main(String[] args) {
         int opcion;
         double radio;
+        opcion = menu();
+        switch (opcion) {
+            case 1:
+                    radio = pideRadio();
+                    System.out.printf("La circunferencia es de: %.2f",circunferencia(radio));
+                    
+        }
 
     }
 
