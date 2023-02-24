@@ -40,5 +40,7 @@ public class Ejerciciojava {
         return 2 * Math.PI * r;
     }
 
-
+    public static double area(double r) {
+        return Math.PI * r * r;
+    }
 }
