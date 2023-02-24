@@ -30,7 +30,11 @@ public class Ejerciciojava {
         return respuesta.nextInt();
     }
 
-
+    public static double pideRadio() {
+        Scanner respuesta = new Scanner(System.in);
+        System.out.print("Introduce un Radio: ");
+        return respuesta.nextInt();
+    }
 
 
 
