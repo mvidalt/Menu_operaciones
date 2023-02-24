@@ -28,6 +28,10 @@ public class Ejerciciojava {
                 radio = pideRadio();
                 System.out.printf("La area es de: %.2f", area(radio));
                 break;
+            case 3:
+                radio = pideRadio();
+                System.out.printf("El volumen es de: %.2f", volumen(radio));
+                break;
 
         }
 
@@ -38,13 +42,14 @@ public class Ejerciciojava {
         System.out.println("MENU");
         System.out.println("1. Circunferencia");
         System.out.println("2. Area");
+        System.out.println("3. Volumen");
         System.out.print("Selecciona una opción: ");
         return respuesta.nextInt();
     }
 
     public static double pideRadio() {
         Scanner respuesta = new Scanner(System.in);
-        System.out.print("Introduce un Radio: ");
+        System.out.print("Introduce un radio: ");
         return respuesta.nextInt();
     }
 
@@ -54,5 +59,9 @@ public class Ejerciciojava {
 
     public static double area(double r) {
         return Math.PI * r * r;
+    }
+
+    public static double volumen(double r) {
+        return 4.0 / 3.0 * Math.PI * r * r * r;
     }
 }
