@@ -32,6 +32,14 @@ public class Ejerciciojava {
                 radio = pideRadio();
                 System.out.printf("El volumen es de: %.2f", volumen(radio));
                 break;
+            case 4:
+                radio = pideRadio();
+                System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
+                System.out.print("\n");
+                System.out.printf("La area es de: %.2f", area(radio));
+                System.out.print("\n");
+                System.out.printf("El volumen es de: %.2f", volumen(radio));
+                break;
 
         }
 
@@ -43,6 +51,7 @@ public class Ejerciciojava {
         System.out.println("1. Circunferencia");
         System.out.println("2. Area");
         System.out.println("3. Volumen");
+        System.out.println("4. Todas");
         System.out.print("Selecciona una opción: ");
         return respuesta.nextInt();
     }
