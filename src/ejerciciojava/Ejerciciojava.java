@@ -52,6 +52,8 @@ public class Ejerciciojava {
                     System.out.println("Saliendo...");
                     bucle = false;
                     break;
+                default:
+                    System.out.println("Numero introducido incorrecto");
 
             }
         }
