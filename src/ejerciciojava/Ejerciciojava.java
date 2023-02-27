@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Hola
  */
 package ejerciciojava;
 
@@ -18,29 +18,36 @@ public class Ejerciciojava {
     public static void main(String[] args) {
         int opcion;
         double radio;
-        opcion = menu();
-        switch (opcion) {
-            case 1:
-                radio = pideRadio();
-                System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
-                break;
-            case 2:
-                radio = pideRadio();
-                System.out.printf("La area es de: %.2f", area(radio));
-                break;
-            case 3:
-                radio = pideRadio();
-                System.out.printf("El volumen es de: %.2f", volumen(radio));
-                break;
-            case 4:
-                radio = pideRadio();
-                System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
-                System.out.print("\n");
-                System.out.printf("La area es de: %.2f", area(radio));
-                System.out.print("\n");
-                System.out.printf("El volumen es de: %.2f", volumen(radio));
-                break;
+        boolean bucle = true;
+        while (bucle == true) {
+            opcion = menu();
+            switch (opcion) {
+                case 1:
+                    radio = pideRadio();
+                    System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
+                    break;
+                case 2:
+                    radio = pideRadio();
+                    System.out.printf("La area es de: %.2f", area(radio));
+                    break;
+                case 3:
+                    radio = pideRadio();
+                    System.out.printf("El volumen es de: %.2f", volumen(radio));
+                    break;
+                case 4:
+                    radio = pideRadio();
+                    System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
+                    System.out.print("\n");
+                    System.out.printf("La area es de: %.2f", area(radio));
+                    System.out.print("\n");
+                    System.out.printf("El volumen es de: %.2f", volumen(radio));
+                    break;
+                case 0:
+                    System.out.println("Saliendo...");
+                    bucle = false;
+                    break;
 
+            }
         }
 
     }
@@ -52,13 +59,14 @@ public class Ejerciciojava {
         System.out.println("2. Area");
         System.out.println("3. Volumen");
         System.out.println("4. Todas");
+        System.out.println("0. Salir");
         System.out.print("Selecciona una opción: ");
         return respuesta.nextInt();
     }
 
     public static double pideRadio() {
         Scanner respuesta = new Scanner(System.in);
-        System.out.print("Introduce un radio: ");
+        System.out.print("Introduce un radio:");
         return respuesta.nextInt();
     }
 
