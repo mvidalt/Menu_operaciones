@@ -24,23 +24,29 @@ public class Ejerciciojava {
             switch (opcion) {
                 case 1:
                     radio = pideRadio();
-                    System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
+                    String resultado1 = String.format("La circunferencia es de: %.2f", circunferencia(radio));
+                    System.out.println(resultado1.replace(",", "."));
                     break;
                 case 2:
                     radio = pideRadio();
-                    System.out.printf("La area es de: %.2f", area(radio));
+                    String resultado2 = String.format("La area es de: %.2f", circunferencia(radio));
+                    System.out.println(resultado2.replace(",", "."));
                     break;
                 case 3:
                     radio = pideRadio();
-                    System.out.printf("El volumen es de: %.2f", volumen(radio));
+                    String resultado3 = String.format("El volumen es de: %.2f", circunferencia(radio));
+                    System.out.println(resultado3.replace(",", "."));                   
                     break;
                 case 4:
                     radio = pideRadio();
-                    System.out.printf("La circunferencia es de: %.2f", circunferencia(radio));
+                    String resultado4 = String.format("La circunferencia es de: %.2f", circunferencia(radio));
+                    System.out.println(resultado4.replace(",", "."));
                     System.out.print("\n");
-                    System.out.printf("La area es de: %.2f", area(radio));
+                    resultado4 = String.format("La area es de: %.2f", circunferencia(radio));
+                    System.out.println(resultado4.replace(",", "."));
                     System.out.print("\n");
-                    System.out.printf("El volumen es de: %.2f", volumen(radio));
+                    resultado4 = String.format("El volumen es de: %.2f", circunferencia(radio));
+                    System.out.println(resultado4.replace(",", "."));
                     break;
                 case 0:
                     System.out.println("Saliendo...");
@@ -54,7 +60,7 @@ public class Ejerciciojava {
 
     public static int menu() {
         Scanner respuesta = new Scanner(System.in);
-        System.out.println("MENU");
+        System.out.println("\nMENU");
         System.out.println("1. Circunferencia");
         System.out.println("2. Area");
         System.out.println("3. Volumen");
