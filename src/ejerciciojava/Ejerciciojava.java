@@ -15,6 +15,10 @@ public class Ejerciciojava {
     /**
      * @param args the command line arguments
      */
+    /*El main crea un bucle que hasta que no se de a 0 se repita infinitamente
+     Guardamos el resultado introducido en el menu y se segun lo seleccionado se mostrara una cosa o otra
+     Si se introduce un codigo equivocado saldra un mensaje por pantalla
+     */
     public static void main(String[] args) {
         int opcion;
         double radio;
@@ -60,6 +64,7 @@ public class Ejerciciojava {
 
     }
 
+    /* El menu muestra todas las opciones disponibles */
     public static int menu() {
         Scanner respuesta = new Scanner(System.in);
         System.out.println("\nMENU");
@@ -72,20 +77,24 @@ public class Ejerciciojava {
         return respuesta.nextInt();
     }
 
+    /* Pide por pantalla introducir un radio */
     public static double pideRadio() {
         Scanner respuesta = new Scanner(System.in);
         System.out.print("Introduce un radio:");
         return respuesta.nextInt();
     }
 
+    /*Calcula la circunferencia recibiendo como parametro un radio */
     public static double circunferencia(double r) {
         return 2 * Math.PI * r;
     }
 
+    /*Calcula el area recibiendo como parametro un radio */
     public static double area(double r) {
         return Math.PI * r * r;
     }
 
+    /*Calcula el volumen recibiendo como parametro un radio */
     public static double volumen(double r) {
         return 4.0 / 3.0 * Math.PI * r * r * r;
     }
